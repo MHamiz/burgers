@@ -1,0 +1,213 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --navbar--height: 59px;
+}
+ /* navigation bar  */
+#navbar img
+{
+width: 70px;
+margin: 5px;
+cursor: pointer;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#logo{
+    margin: 4px 25px;
+}
+#logo img{
+    height: 56px;
+    margin:3px 6px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar {
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+}
+#navbar ul li a{
+    padding: 3px 25px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+/* section home */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg) no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    background-color: wheat;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    margin: 22px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+}
+.h-primary
+{
+font-size: 52px;
+margin: 12px;
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-secondry{
+    font-size: 42px;
+    padding: 12px;
+    
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn
+{
+    padding: 12px 20px;
+    margin: 12px;
+    background: transparent;
+    color: white;
+    border: solid 2px;
+    font-size: 15px;
+    border-radius:10px ;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover
+{
+    background-color: brown;
+    color: white;
+}
+.center {
+    text-align: center;
+}
+#services{
+    display: flex;
+justify-content: space-around;
+margin-bottom: 7px;
+}
+#services .box
+{
+    border: 2px solid brown;
+    width: 400px;
+    margin: 2px 15px;
+    border-radius: 12px;
+    background-color: wheat;
+    cursor: pointer;
+}
+#services .box img 
+{
+    height: 198px;
+    border-radius: 10px;
+
+}
+#services p
+{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#services img{
+    width: 100%;
+}
+#client-section .box2 img{
+    border: solid 2px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}               
+#client-section .box2
+{
+    border: 2px solid brown;
+    width: 100%;
+    /* margin: 0%; */
+    height: 450px;
+    border-radius: 12px;
+    background-color: wheat;
+    cursor: pointer;
+}
+#client-section p{
+padding: 12px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    background: url(istockphoto-1458164457-1024x1024.jpg) no-repeat center center/cover;
+    opacity: 0.7;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 7px 18px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
